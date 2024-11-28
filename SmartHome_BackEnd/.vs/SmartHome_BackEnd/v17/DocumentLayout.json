@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\IOT_DACNTT\\SmartHome_BackEnd\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{46CF6184-81C8-4ECA-8FAC-3D71181D8E58}|SmartHome_BackEnd\\SmartHome_BackEnd.csproj|e:\\iot_dacntt\\smarthome_backend\\smarthome_backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46CF6184-81C8-4ECA-8FAC-3D71181D8E58}|SmartHome_BackEnd\\SmartHome_BackEnd.csproj|solutionrelative:smarthome_backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46CF6184-81C8-4ECA-8FAC-3D71181D8E58}|SmartHome_BackEnd\\SmartHome_BackEnd.csproj|e:\\iot_dacntt\\smarthome_backend\\smarthome_backend\\controllers\\valuescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46CF6184-81C8-4ECA-8FAC-3D71181D8E58}|SmartHome_BackEnd\\SmartHome_BackEnd.csproj|solutionrelative:smarthome_backend\\controllers\\valuescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46CF6184-81C8-4ECA-8FAC-3D71181D8E58}|SmartHome_BackEnd\\SmartHome_BackEnd.csproj|e:\\iot_dacntt\\smarthome_backend\\smarthome_backend\\smarthome_backend.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{46CF6184-81C8-4ECA-8FAC-3D71181D8E58}|SmartHome_BackEnd\\SmartHome_BackEnd.csproj|solutionrelative:smarthome_backend\\smarthome_backend.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ValuesController.cs",
+              "DocumentMoniker": "E:\\IOT_DACNTT\\SmartHome_BackEnd\\SmartHome_BackEnd\\Controllers\\ValuesController.cs",
+              "RelativeDocumentMoniker": "SmartHome_BackEnd\\Controllers\\ValuesController.cs",
+              "ToolTip": "E:\\IOT_DACNTT\\SmartHome_BackEnd\\SmartHome_BackEnd\\Controllers\\ValuesController.cs",
+              "RelativeToolTip": "SmartHome_BackEnd\\Controllers\\ValuesController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T13:01:29.58Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SmartHome_BackEnd.http",
+              "DocumentMoniker": "E:\\IOT_DACNTT\\SmartHome_BackEnd\\SmartHome_BackEnd\\SmartHome_BackEnd.http",
+              "RelativeDocumentMoniker": "SmartHome_BackEnd\\SmartHome_BackEnd.http",
+              "ToolTip": "E:\\IOT_DACNTT\\SmartHome_BackEnd\\SmartHome_BackEnd\\SmartHome_BackEnd.http",
+              "RelativeToolTip": "SmartHome_BackEnd\\SmartHome_BackEnd.http",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-11-28T12:58:48.594Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\IOT_DACNTT\\SmartHome_BackEnd\\SmartHome_BackEnd\\Program.cs",
+              "RelativeDocumentMoniker": "SmartHome_BackEnd\\Program.cs",
+              "ToolTip": "E:\\IOT_DACNTT\\SmartHome_BackEnd\\SmartHome_BackEnd\\Program.cs",
+              "RelativeToolTip": "SmartHome_BackEnd\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T12:57:55.592Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
