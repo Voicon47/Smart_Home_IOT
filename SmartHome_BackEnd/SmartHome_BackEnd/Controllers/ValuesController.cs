@@ -1,18 +1,19 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using SmartHome_BackEnd.Data;
+using SmartHome_BackEnd.Entities;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace SmartHome_BackEnd.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/sensor")]
     [ApiController]
     public class ValuesController : ControllerBase
     {
-        // GET: api/<ValuesController>
-        [HttpGet]
-        public IEnumerable<string> Get()
+        private readonly DataContext _context;
+        public ValuesController(DataContext context)
         {
-            return new string[] { "value1", "value2" };
+            this._context = context;
         }
 
         // GET api/<ValuesController>/5
@@ -24,8 +25,33 @@ namespace SmartHome_BackEnd.Controllers
 
         // POST api/<ValuesController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public async Task<IActionResult> PostSensorData([FromBody] Sensor sensorData)
         {
+            Console.WriteLine($"Temperature: {sensorData.Temperature}, Humidity: {sensorData.Humidity}");
+            if (sensorData == null)
+            {
+                return BadRequest("Sensor data is null.");
+            }
+            
+            try
+            {
+                _context.Sensors.Add(sensorData); // Assuming Sensors is the DbSet<SensorData>
+                await _context.SaveChangesAsync();
+
+                return Ok(new { message = "Sensor data saved successfully." });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
+
+        // GET api/<ValuesController>/sensor
+        [HttpGet]
+        public IActionResult GetSensorData()
+        {
+            var sensorDataList = _context.Sensors.ToList();
+            return Ok(sensorDataList);
         }
 
         // PUT api/<ValuesController>/5

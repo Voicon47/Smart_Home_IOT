@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using web_back.Data;
+using SmartHome_BackEnd.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,7 +20,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-var app = builder.Build();
+
 
 ////
 builder.Services.AddDbContext<DataContext>(options =>
@@ -29,7 +29,7 @@ builder.Services.AddDbContext<DataContext>(options =>
 
 });
 
-
+var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
