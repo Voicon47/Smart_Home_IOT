@@ -1,6 +1,6 @@
 [
   {
-    "ContainingType": "SmartHome_BackEnd.Controllers.ValuesController",
+    "ContainingType": "SmartHome_BackEnd.Controllers.SensorController",
     "Method": "PostSensorData",
     "RelativePath": "api/sensor",
     "HttpMethod": "POST",
@@ -16,7 +16,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "SmartHome_BackEnd.Controllers.ValuesController",
+    "ContainingType": "SmartHome_BackEnd.Controllers.SensorController",
     "Method": "GetSensorData",
     "RelativePath": "api/sensor",
     "HttpMethod": "GET",
@@ -26,7 +26,17 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "SmartHome_BackEnd.Controllers.ValuesController",
+    "ContainingType": "SmartHome_BackEnd.Controllers.SensorController",
+    "Method": "DeleteAllSensor",
+    "RelativePath": "api/sensor",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SmartHome_BackEnd.Controllers.SensorController",
     "Method": "Get",
     "RelativePath": "api/sensor/{id}",
     "HttpMethod": "GET",
@@ -52,7 +62,7 @@
     ]
   },
   {
-    "ContainingType": "SmartHome_BackEnd.Controllers.ValuesController",
+    "ContainingType": "SmartHome_BackEnd.Controllers.SensorController",
     "Method": "Put",
     "RelativePath": "api/sensor/{id}",
     "HttpMethod": "PUT",
@@ -79,7 +89,7 @@
     ]
   },
   {
-    "ContainingType": "SmartHome_BackEnd.Controllers.ValuesController",
+    "ContainingType": "SmartHome_BackEnd.Controllers.SensorController",
     "Method": "Delete",
     "RelativePath": "api/sensor/{id}",
     "HttpMethod": "DELETE",
@@ -92,6 +102,22 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "SmartHome_BackEnd.Controllers.TestWebSocketController",
+    "Method": "Get",
+    "RelativePath": "api/ws",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": [
       {
         "Type": "System.Void",

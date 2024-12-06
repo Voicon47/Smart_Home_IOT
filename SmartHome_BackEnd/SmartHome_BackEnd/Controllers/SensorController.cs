@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using SmartHome_BackEnd.Data;
 using SmartHome_BackEnd.Entities;
 
@@ -8,10 +9,10 @@ namespace SmartHome_BackEnd.Controllers
 {
     [Route("api/sensor")]
     [ApiController]
-    public class ValuesController : ControllerBase
+    public class SensorController : ControllerBase
     {
         private readonly DataContext _context;
-        public ValuesController(DataContext context)
+        public SensorController(DataContext context)
         {
             this._context = context;
         }
@@ -48,9 +49,9 @@ namespace SmartHome_BackEnd.Controllers
 
         // GET api/<ValuesController>/sensor
         [HttpGet]
-        public IActionResult GetSensorData()
+        public async Task<IActionResult> GetSensorData()
         {
-            var sensorDataList = _context.Sensors.ToList();
+            var sensorDataList =await _context.Sensors.ToListAsync();
             return Ok(sensorDataList);
         }
 
@@ -64,6 +65,20 @@ namespace SmartHome_BackEnd.Controllers
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+
+        }
+        [HttpDelete]
+        public async Task<IActionResult> DeleteAllSensor()
+        {
+            var sensor = await _context.Sensors.ToListAsync();
+            if(!sensor.Any())
+            {
+                return NoContent();
+            }
+            _context.Sensors.RemoveRange(sensor);
+            await _context.SaveChangesAsync();
+            return NoContent();
+
         }
     }
 }
