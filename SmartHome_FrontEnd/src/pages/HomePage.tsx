@@ -1,7 +1,7 @@
 import { Link, Skeleton,Switch } from "@nextui-org/react";
 import { useState, useEffect } from "react";
 import {Divider} from "@nextui-org/react";
-import SensorItem, { ISensor } from "./SensorItem";
+import SensorItem, { ISensor } from "../components/SensorItem";
 
 export interface WebSocketMessage<T> {
   Type: string; // Type of the message ("SensorData" or "Light")
@@ -92,12 +92,12 @@ export interface WebSocketMessage<T> {
     }
   };
   return (
-    <div>
+    <div >
       <h1>Sensor Data</h1>
       <p>Status: {connectionStatus}</p>
 
       { sensorData? (
-          <div className="max-w-screen-lg m-auto flex flex-col gap-2">
+          <div className=" m-auto flex flex-col gap-2">
               <SensorItem data={sensorData}/>
           </div>
       ) : (
